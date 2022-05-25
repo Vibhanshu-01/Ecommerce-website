@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const items = [
   {
-    label: 'Home',
+    label: <Link to="/">Home</Link> ,
     key: 'home',
     icon: <AppstoreOutlined />,
   },
@@ -26,14 +26,14 @@ const items = [
 
   },
   {
-    label: 'Register',
+    label: <Link to="/register">Register</Link>,
     key: 'register',
     icon: <UserAddOutlined/>,
     style :{ marginLeft: 'auto' },
     
   },
   {
-    label: 'Login',
+    label: <Link to="/login">Login</Link>,
     key: 'login',
     icon: <UserOutlined/>,
     
